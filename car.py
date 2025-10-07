@@ -1,7 +1,7 @@
 class Car:
-    def __init__(self, gallonsOfGas):
+    def __init__(self, currentGallonsOfGas):
         print ("car created")
-        self.currentGallonsOfGas = gallonsOfGas
+        self.currentGallonsOfGas = currentGallonsOfGas
         self.maxGallonOfGas = 12
         # number of miles per gallon. Then howMuchToDrive (amountOfMIles), then costs of gallons of gasoline, then newAmountOfGasoline = self.currentAmountOfGas - numOfGallons it took to  move
 
