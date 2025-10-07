@@ -16,7 +16,7 @@ class Car:
     def fillWithGas(self, numToFillBy):
         newAmountOfGas = self.gallonsOfGas + numToFillBy
         if newAmountOfGas > self.maxGallonOfGas:
-            raise Exception("The car can't hold that much of gas because you put in {}, and it's {} gallons over".format(newAmountOfGas, newAmountOfGas - self.maxGallonOfGas))
+            raise Exception("The car can't hold that much of gas because you put in {} gallons, and the max is {} gallons, and it's {} gallons over!".format(newAmountOfGas, self.maxGallonOfGas, newAmountOfGas - self.maxGallonOfGas))
 
 if __name__ == "__main__":
     car = Car(3)
@@ -25,4 +25,3 @@ if __name__ == "__main__":
         car.fillWithGas(15)
     except Exception as e:
         print (e)
-        print ("the max gallons in the tank is {}".format(car.maxGallonOfGas))
